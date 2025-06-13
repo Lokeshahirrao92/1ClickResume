@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>1ClickResume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <section class="container">
     <h1>1ClickResume</h1>
-    <p>Instant PDF resume builder with live editing</p>
-    <textarea id="editor" placeholder="Enter your resume content here..."></textarea>
-    <button onclick="downloadPDF()">Download PDF</button>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+    <form id="resume-form">
+      <input type="text" placeholder="Full Name" name="name" required />
+      <input type="email" placeholder="Email" name="email" required />
